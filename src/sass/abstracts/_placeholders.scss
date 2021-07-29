@@ -1,0 +1,17 @@
+%transition {
+    transition: all .3s ease-out;
+}
+
+%font-prim {
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+%font-add {
+    font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

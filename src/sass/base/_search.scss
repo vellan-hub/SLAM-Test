@@ -1,0 +1,28 @@
+.search {
+    @extend %flex;
+}
+
+.search__input {
+    border: none;
+    outline: none;
+    color: $color-text;
+    @extend %font-add;
+    @include font ($size: 1.5rem, $height: 2.2rem);
+    flex-grow: 1;
+    background-color: transparent;
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.search__button_close {
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/icons/close.svg);
+    @include media-tablet {
+        display: none;
+    }
+}

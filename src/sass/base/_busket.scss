@@ -1,0 +1,9 @@
+.busket {
+    @extend %flex;
+    text-decoration: none;
+    color: $color-text-primary;
+    gap: 11px;
+    @include media-tablet {
+        gap: 5px;
+    }
+}

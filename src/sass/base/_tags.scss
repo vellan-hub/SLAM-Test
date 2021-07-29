@@ -1,0 +1,30 @@
+.tags {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.tag {
+    @include font ($size: 1.2rem, $height: 1.8rem, $weight: bold);
+    color: $color-light;
+    padding: 0 10px;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    @extend %transition;
+    &:hover {
+        transform: translate(-3px, -3px);
+    }
+}
+
+.tag_yellow {
+    background-color: $color-yellow;
+}
+
+.tag_green {
+    background-color: $color-green;
+}
+
+.tag_blue {
+    background-color: $color-blue;
+}

@@ -1,0 +1,12 @@
+.favorites {
+    @extend %flex;
+    gap: 10px;
+    text-decoration: none;
+    @include media-tablet {
+        gap: 7px;
+    }
+}
+
+.favorites__text {
+    color: $color-text-primary;
+}

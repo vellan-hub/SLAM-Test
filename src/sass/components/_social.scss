@@ -1,0 +1,24 @@
+.social {
+    @extend %flex;
+    margin: 0;
+    flex-wrap: wrap;
+    @include media-tablet {
+        margin: 0 auto;
+    }
+}
+
+.social__link {
+    display: inline-flex;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: $color-light;
+    @extend %transition;
+    &:hover {
+        color: $color-hovered;
+    }
+}
+
+.social__icon {
+    width: 24px;
+    height: 24px;
+}

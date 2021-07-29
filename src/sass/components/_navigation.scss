@@ -1,0 +1,30 @@
+.navigation {
+    @extend %flex;
+    margin: 0;
+    @include media-tablet {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: $color-primary;
+        padding: 20px 20px 20px 50px;
+    }
+    @include media-mobile {
+        top: 80px;
+    }
+}
+
+.navigation__link {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: $color-light;
+    @extend %transition;
+    &:hover {
+        color: $color-hovered;
+    }
+    @include media-tablet {
+        @include font ($size: 2.2rem);
+        display: inline-block;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAM-Test</title>
+    <link rel="stylesheet" href="./src/sass/style.css">
+</head>
+<body>
+    <header class="header block-shadowed">
+        <div class="wrapper">
+            <div class="header-top">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">О компании</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Потребителям</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Магазины</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="mailto:info@info.com ">
+                            <span class="icon social__icon icon_email"></span>
+                            info@info.com
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="tel:+375 (29) 646-16-16">
+                            <span class="icon social__icon icon_mts"></span>
+                            <span class="icon social__icon icon_a1"></span>
+                            +375 (29) 646-16-16
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <span class="icon social__icon icon_phone"></span>
+                            Обратный звонок
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <span class="icon social__icon icon_entry"></span>
+                            Войти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-bottom">
+                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+                <a class="logo" href="#">
+                    <object class="logo-object" data="./src/img/logo.svg" type="image/svg+xml">
+                        Your browser does not support SVG
+                    </object>
+                </a>
+                <p class="header-bottom__text">Разработка как спорт. Важен только результат.</p>
+                <div class="search header-bottom__search">
+                    <span class="icon icon_search"></span>
+                    <input class="search__input" type="search" name="search" placeholder="Введите текст для поиска">
+                    <button class="search__button_close" type="reset"></button>
+                </div>
+                <a class="favorites" href="#">
+                    <span class="icon icon_favorites"></span>
+                    <p class="favorites__text" href="#">Избранное</p>
+                </a>
+                <a class="busket" href="#">
+                    <span class="icon icon_busket"></span>
+                    <span class="busket__total">25555.50 р.</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="main-slider">
+        <div class="wrapper">
+            <a href="#">
+                <img class="main-slider__image" src="./src/img/main-slides/slide1.png" alt="slide">
+            </a>
+        </div>
+    </section>
+    <section class="promo">
+        <div class="wrapper promo__wrapper">
+            <h2 class="promo__title">Promo block</h2>
+            <div class="promo-slider__container">
+                <div class="product-card block-shadowed">
+                    <div class="tags product-card__tags">
+                        <span class="tag tag_yellow">Акция -25%</span>
+                        <span class="tag tag_green">Новинка</span>
+                        <span class="tag tag_blue">Рекомендуем</span>
+                    </div>
+                    <span class="icon icon_favorites product-card__icon_favorites"></span>
+                    <img class="product-card__img" src="./src/img/product-card/1.png" alt="1">
+                    <div class="product-card__available-code">
+                        <span class="available">В наличии</span>
+                        <span class="code">Код: 4744481010818</span>
+                    </div>
+                    <p>Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Бульон</p>
+                    <div class="product-card__prices-busket">
+                        <div class="prices">
+                            <span class="price">500.20 р.</span>
+                            <span class="price_old">600.20 р.</span>
+                        </div>
+                        <span class="icon icon_busket"></span>
+                    </div>
+                    <div class="product-card__more-info hidden">
+                        <div class="product-card__amount">
+                            <span class="amount__sign amount__down">-</span>
+                            <input class="amount__value" type="text" value="1" />
+                            <span class="amount__sign amount__up">+</span>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_bordered">Купить в 1 клик</button>
+                            <button class="button button_colored">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card block-shadowed">
+                    <div class="tags product-card__tags">
+                        <span class="tag tag_yellow">Акция -25%</span>
+                        <span class="tag tag_green">Новинка</span>
+                        <span class="tag tag_blue">Рекомендуем</span>
+                    </div>
+                    <span class="icon icon_favorites product-card__icon_favorites"></span>
+                    <img class="product-card__img" src="./src/img/product-card/2.png" alt="2">
+                    <div class="product-card__available-code">
+                        <span class="available">В наличии</span>
+                        <span class="code">Код: 4744481010818</span>
+                    </div>
+                    <p>Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Бульон</p>
+                    <div class="product-card__prices-busket">
+                        <div class="prices">
+                            <span class="price">500.20 р.</span>
+                            <span class="price_old">600.20 р.</span>
+                        </div>
+                        <span class="icon icon_busket"></span>
+                    </div>
+                    <div class="product-card__more-info hidden">
+                        <div class="product-card__amount">
+                            <span class="amount__sign amount__down">-</span>
+                            <input class="amount__value" type="text" value="1" />
+                            <span class="amount__sign amount__up">+</span>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_bordered">Купить в 1 клик</button>
+                            <button class="button button_colored">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card block-shadowed">
+                    <div class="tags product-card__tags">
+                        <span class="tag tag_yellow">Акция -25%</span>
+                        <span class="tag tag_green">Новинка</span>
+                        <span class="tag tag_blue">Рекомендуем</span>
+                    </div>
+                    <span class="icon icon_favorites product-card__icon_favorites"></span>
+                    <img class="product-card__img" src="./src/img/product-card/3.png" alt="3">
+                    <div class="product-card__available-code">
+                        <span class="available">В наличии</span>
+                        <span class="code">Код: 4744481010818</span>
+                    </div>
+                    <p>Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Бульон</p>
+                    <div class="product-card__prices-busket">
+                        <div class="prices">
+                            <span class="price">500.20 р.</span>
+                            <span class="price_old">600.20 р.</span>
+                        </div>
+                        <span class="icon icon_busket"></span>
+                    </div>
+                    <div class="product-card__more-info hidden">
+                        <div class="product-card__amount">
+                            <span class="amount__sign amount__down">-</span>
+                            <input class="amount__value" type="text" value="1" />
+                            <span class="amount__sign amount__up">+</span>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_bordered">Купить в 1 клик</button>
+                            <button class="button button_colored">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card block-shadowed">
+                    <div class="tags product-card__tags">
+                        <span class="tag tag_yellow">Акция -25%</span>
+                        <span class="tag tag_green">Новинка</span>
+                        <span class="tag tag_blue">Рекомендуем</span>
+                    </div>
+                    <span class="icon icon_favorites product-card__icon_favorites"></span>
+                    <img class="product-card__img" src="./src/img/product-card/4.png" alt="4">
+                    <div class="product-card__available-code">
+                        <span class="available">В наличии</span>
+                        <span class="code">Код: 4744481010818</span>
+                    </div>
+                    <p>Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Бульон</p>
+                    <div class="product-card__prices-busket">
+                        <div class="prices">
+                            <span class="price">500.20 р.</span>
+                            <span class="price_old">600.20 р.</span>
+                        </div>
+                        <span class="icon icon_busket"></span>
+                    </div>
+                    <div class="product-card__more-info hidden">
+                        <div class="product-card__amount">
+                            <span class="amount__sign amount__down">-</span>
+                            <input class="amount__value" type="text" value="1" />
+                            <span class="amount__sign amount__up">+</span>
+                        </div>
+                        <div class="product-card__buttons">
+                            <button class="button button_bordered">Купить в 1 клик</button>
+                            <button class="button button_colored">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="promo__catalog-link" href="#">Перейти в каталог</a>
+            <div class="form-style">
+                <h3 class="form-style__title">Form style</h3>
+                <div class="form-style__container">
+                    <label class="form-style__label">
+                        <input class="form-style__input" type="checkbox" name="checkbox">
+                        В корзину
+                    </label>
+                    <label class="form-style__label label_square">
+                        <input class="form-style__input" type="checkbox" name="checkbox">
+                        В корзину
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./src/index.js"></script>
+</body>
+</html>

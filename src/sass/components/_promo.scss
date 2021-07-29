@@ -1,0 +1,39 @@
+.promo {
+    padding: 50px 20px;
+    @include media-tablet {
+        padding: 30px 20px;
+    }
+}
+
+.promo__wrapper {
+    background-image: url(../img/promo/promo-background.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.promo__title {
+    margin: 0;
+    margin-bottom: 70px;
+    @include media-tablet {
+        margin-bottom: 30px;
+    }
+}
+
+.promo-slider__container {
+    max-width: 1320px;
+    margin: auto;
+    @extend %flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.promo__catalog-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: $color-text-primary;
+    @include media-tablet {
+        margin-top: 0;
+    }
+}

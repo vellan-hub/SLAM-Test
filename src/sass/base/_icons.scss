@@ -1,0 +1,45 @@
+.icon {
+    display: inline-block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.icon_email {
+    background-image: url(../img/icons/email.svg);
+}
+
+.icon_mts {
+    background-image: url(../img/icons/mts.svg);
+}
+
+.icon_a1 {
+    background-image: url(../img/icons/a1.svg);
+}
+
+.icon_phone {
+    background-image: url(../img/icons/phone.svg);
+}
+
+.icon_entry {
+    background-image: url(../img/icons/entry.svg);
+}
+
+.icon_search {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icons/search.svg);
+}
+
+.icon_favorites {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/icons/favorites.svg);
+}
+
+.icon_busket {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/icons/busket.svg);
+}

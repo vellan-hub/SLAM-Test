@@ -1,0 +1,92 @@
+.product-card {
+    padding: 15px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-basis: 23%;
+    background-color: $color-light;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+        transform: translate(-5px, -5px);
+    }
+    @include media-tablet {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+    @include media-mobile {
+        flex-basis: 100%;
+    }
+}
+
+.product-card__tags {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.product-card__icon_favorites {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+}
+
+.product-card__img {
+    width: auto;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+.product-card__available-code {
+    @extend %flex;
+}
+
+.available {
+    color: $color-text-primary;
+}
+
+.code {
+    color: $color-text-light;
+}
+
+.product-card__prices-busket {
+    @extend %flex;
+    margin-bottom: 10px;
+}
+
+.price {
+    @include font ($size: 2.4rem, $height: 3.6rem, $weight: bold);
+}
+
+.price_old {
+    @include font ($size: 1.8rem, $height: 2.6rem);
+    color: $color-text-light;
+    text-decoration: line-through;
+}
+
+.product-card__amount {
+    @extend %flex;
+    background-color: $color-background-dark;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.amount__sign {
+    @include font ($size: 2.4rem, $weight: bold);
+}
+
+.amount__value {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.product-card__buttons {
+    @extend %flex;
+    margin-top: 10px;
+}

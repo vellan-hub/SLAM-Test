@@ -1,0 +1,31 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.5rem, $height: 2.2rem);
+    overflow-x: hidden;
+}
+
+h2 {
+    @include font($size: 4.8rem, $weight: bold);
+    color: $color-text-primary;
+}
+
+h3 {
+    @include font($size: 3.6rem, $weight: bold);
+    color: $color-text-primary;
+}
+
+.block-shadowed {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.visible {
+    display: block !important;
+}
+
+.hidden {
+    display: none;
+}

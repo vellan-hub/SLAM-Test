@@ -1,0 +1,42 @@
+.header {
+    background-color: $color-background;
+}
+
+.header-top {
+    @extend %flex;
+    padding: 5px 10px;
+    background-color: $color-primary;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.header-bottom {
+    @extend %flex;
+    padding: 15px 20px;
+    gap: 5%;
+    flex-wrap: wrap;
+
+}
+
+.header-bottom__text {
+    @extend %font-add;
+    @include font ($size: 1.4rem, $height: 2.2rem);
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    color: $color-text-light;
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.header-bottom__search {
+    background-color: $color-background-dark;
+    border-radius: 25px;
+    padding: 13px 15px;
+    flex-grow: 1;
+    @include media-tablet {
+        flex-grow: 0;
+    }
+}

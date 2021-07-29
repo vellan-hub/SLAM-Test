@@ -1,0 +1,28 @@
+.form-style__container {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.form-style__title {
+    @include media-tablet {
+        margin: 20px 0;
+    }
+}
+
+.form-style__label {
+    cursor: pointer;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $color-text-light;
+    }
+    &:hover {
+        color: $color-hovered;
+    }
+}
+
+.form-style__input {
+    display: none;
+}
